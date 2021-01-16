@@ -89,6 +89,9 @@ box-sizing: border-box;
   a {
   text-decoration: none;
   }
+  button {
+border: none ;
+  }
   .container {
   width: 100%;
   max-width: 100%;
@@ -157,68 +160,68 @@ box-sizing: border-box;
   padding-bottom: 20px;
   }
   .main-button {
-  font-family:inherit;
+  font-family:inherit; 
+  padding:10px  18px;
   background: white;
-  color:rgba( 247,148,30,1);
+  color: #f7941e;
   cursor: pointer;
-  border: 1px solid #F7941E;
+  border: 1px solid #f7941e;
   box-sizing: border-box;
   border-radius: 5px;
-  padding:10px  30px 10px  0px;
   margin-top: 16px;
+    border: 1px solid #f7941e;
+    transition: all 0.3s ease 0s;
   }
   .main-nav-list-item:hover {
-  background-color: rgb(167, 241, 70);
+  background-color:#f7941e;
   }
   .main-button:hover {
-  background-color: rgb(167, 241, 70);
-  color: rgb(42, 0, 228);
-  box-shadow: 0 8px 16px 0 rgb(209, 226, 53);
+  background-color:#f7941e;
+  color: #e4e4e4;
+  box-shadow: 0 8px 16px 0 #f7941e;
   }
   .main-button:focus {
-  color: rgba(250, 0, 0, 0.8);
+  color: #0400e7cc;
   }
   .main-button:active {
-  color: rgb(124, 0, 0);
+  color: #7c0000;
   }
   .learn-button {
   font-family:inherit;
-  background: rgba(241, 241, 242, 1);
-  color:rgba( 247,148,30,1);
+  background:#f1f1f2;
+  color:#f7941e;
   cursor: pointer;
-  border: 1px solid #F7941E;
+  border: 1px solid#f7941e;
   box-sizing: border-box;
-  border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 14px;
-  padding-right: 46px;
-  padding-left: 46px;
+  border-radius: 5px; 
+  padding: 20px 44px;
   font-size: 22px;
+  transition: all 0.3s ease 0s;
   }
   .learn-button:hover {
-  background-color: rgb(167, 241, 70);
-  color: rgb(42, 0, 228);
-  box-shadow: 0 8px 16px 0 rgb(209, 226, 53);
+  background-color:#f7941e;
+  color:#ffffff;
+  box-shadow: 0 8px 16px 0  #f7941e;
   }
   .learn-button:focus {
-  color: rgba(250, 0, 0, 0.8);
+  color:  #0400e7cc;
   }
   .learn-button:active {
-  color: rgb(124, 0, 0);
+  color: #7c0000;
   }
   .gift-button:hover {
-  background-color: rgb(167, 241, 70);
-  color: rgb(42, 0, 228);
-  box-shadow: 0 8px 16px 0 rgb(209, 226, 53);
+  background-color:  #f7941e;
+  color: #ffffff;
+  box-shadow: 0 8px 16px 0  #f7941e;
   }
   .gift-button:focus {
-  color: rgba(250, 0, 0, 0.8);
+  color:  #0400e7cc;
   }
   .gift-button:active {
-  color: rgb(124, 0, 0);
+  color: #7c0000;
   }
   .main-text-photo {
-  background:rgba( 241,241,242,1);
+  background:#f1f1f2;
   }
   .hero-flex {
   display: flex;
@@ -245,11 +248,11 @@ box-sizing: border-box;
   }
   .gift-button {
   margin-right: 24px;
-  background: #F7941E;
+  background: #f7951d;
   border-radius: 5px;
-  color: white;
+  color: #ffffff;
   border: none;
-  padding: 22px 15px 24px 26px;
+  padding: 22px 24px;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 20px;
@@ -287,10 +290,6 @@ box-sizing: border-box;
   min-width:370px;
   min-height:360px;
   }
-  .main-button {
-  margin-right: 20px;
-  padding-left: 8px;
-  }
   .gift {
   margin-right: 16px;
   }
@@ -303,6 +302,11 @@ box-sizing: border-box;
   margin-left: 84px;  
   margin-left: 84px;  
   }
+  .hero-text {
+    text-align: left;
+  }
+  .w-spacing {
+    text-align: center;
   }
   .logotip{
   padding-top: 24px;
@@ -315,18 +319,17 @@ box-sizing: border-box;
   .gift-search {
   padding-top: 12px;
   text-align: left;
-  padding-right: 142px;
 }
   .gift-button {
   margin-top: 34px;
   padding-right: 26px;
-  margin-right: 320px
   }
   .how_we_work {
-  background:rgba( 241,241,242,1);
+  background:#f1f1f2;
   margin: 0;
   padding: 0;
   }
+}
   @media screen and (min-width: 768px) {
   .photo-thanks {
   min-width: 345px;
@@ -393,7 +396,6 @@ box-sizing: border-box;
   font-weight: 400;
   font-size: 32px;
   line-height: 38px;
-  text-align: center;
   color: #000;
   padding-top: 50px;
   padding-bottom: 23px;
@@ -421,7 +423,6 @@ box-sizing: border-box;
   }
   .col{
   width: 100%;
-  padding: 20px 80px;
   }
   @media screen and (min-width: 576px){
   .col{
@@ -457,9 +458,10 @@ box-sizing: border-box;
   }
   .col-white{
   height: 166px;
-  background: white;
-  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.1);
-  padding: 12px 26px 20px 32px;;
+  background: #ffffff;
+  box-shadow: 8px 8px 10px 0 #0000001a;
+  padding: 12px 26px 20px 32px;
+  margin-right: 20px;
   }
   .col-phar{
   font-weight: 400;
@@ -475,10 +477,10 @@ box-sizing: border-box;
   cursor: pointer;
   }
   .col-text:hover{
-  background: rgb(255, 160, 36);
+  background: #ffa024;
   }
   .col-text:focus{
-  background: rgb(255, 61, 61);
+  background: #ff3d3d;
   }
   @media screen and (min-width: 576px){
   .col-phar  {
@@ -490,8 +492,13 @@ box-sizing: border-box;
   margin-right: 32px;
   }
   }
+  @media screen and (min-width: 1280px){
+    .col-white {
+      margin: 0;
+    }
+  } 
   .start {
-  background:rgba(247, 148, 30, 1) ;
+  background:#f7871e ;
   }
   .start-flex {
   width: 100%;
@@ -501,58 +508,61 @@ box-sizing: border-box;
   }
   .ready {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 45px;
   padding-top: 50px; 
-  padding-left: 56px;
   }
   .ready2 {
-  font-size: 26px;
+  font-size: 28px;
   line-height: 45px;
   font-weight: 400;
   text-align: center;
   }
   .button-find-gift {
   background: black;
-  color: white;
+  color: #ffffff;
   border-radius: 5px;
-  padding: 18px 24px 10px 24px;
+  padding: 18px 24px;
   margin-left: 62px;
   cursor: pointer;
   margin-bottom: 20px;
+  border: none; 
+  transition: all 0.3s ease 0s;
   }
   .button-works {
-  background:rgba(247, 148, 30, 1) ;
+  background:#f7941e ;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 18px 24px 10px 24px;
+  padding: 18px 24px;
   margin-left: 16px;
   cursor: pointer;
   margin-left: 62px;
   margin-bottom: 30px;
+  margin-bottom: 94px;
+  transition: all 0.3s ease 0s;
   }  
   .button-find-gift:hover {
-  background-color: rgb(167, 241, 70);
-  color: rgb(42, 0, 228);
-  box-shadow: 0 8px 16px 0 rgb(209, 226, 53);
+  background-color:#a7f146;
+  color: #2a00e4;
+  box-shadow: 0 8px 16px 0 #000000;
   }
   .button-find-gift:focus {
-  color: rgba(250, 0, 0, 0.8);
+  color: #fa0000cc;
   }
   .button-find-gift:active {
-  color: rgb(124, 0, 0);
+  color: #7c0000;
   }
   .button-works:hover {
-  background-color: rgb(167, 241, 70);
-  color: rgb(42, 0, 228);
-  box-shadow: 0 8px 16px 0 rgb(209, 226, 53);
+  background-color: #a7f146;
+  color: #2a00e4;
+  box-shadow: 0 8px 16px 0 #000000;
   }
   .button-works:focus {
-  color: rgba(250, 0, 0, 0.8);
+  color: #fa0000cc;
   }
   .button-works:active {
-  color: rgb(124, 0, 0);
+  color: #7c0000;
   }
   @media screen and (min-width: 576px){
   .ready {
@@ -581,10 +591,10 @@ box-sizing: border-box;
   }
   .ready {
   padding-top: 80px;
-  padding-right: 60px;
+text-align: center;
   }
   .ready2 {
-  padding-right: 122px;
+  padding-right: 12px;
   padding-bottom: 70px;
   }
   .button-find-gift {
@@ -644,7 +654,7 @@ box-sizing: border-box;
   }
   .read-more:focus{
   font-size: 20px;
-  color: rgba(216, 88, 88, 0.8);
+  color: #c55b5bcc;
   }
   @media screen and (min-width: 576px){
   .container-photo{
@@ -757,7 +767,7 @@ box-sizing: border-box;
   }
   .database{
   padding: 48px 48px 50px;
-  box-shadow: 5px 5px 10px 0 rgb(228, 226, 226);
+  box-shadow: 5px 5px 10px 0 #e4e2e2;
   }
   .marg-0 {
   box-shadow: none;
@@ -786,7 +796,7 @@ box-sizing: border-box;
   }
   .read-mo:focus{
   font-size: 18px;
-  color: rgb(253, 91, 91);
+  color: #fd5b5b;
   }
   @media screen and (min-width: 992px){
   .flex-database{
@@ -812,7 +822,7 @@ box-sizing: border-box;
   font-weight: bold;
   }
   .links-flex {
-  color: black;
+  color: #000000;
   }
   @media screen and (min-width: 992px){
   .links-flex {
@@ -825,7 +835,7 @@ box-sizing: border-box;
 .horizontal-line {
   height: 2px; 
   border: none;
-  background-color: grey;
+  background-color: #808080;
   margin: 0 85px 66px;
 }
   .sites {
@@ -849,17 +859,17 @@ box-sizing: border-box;
   border: none;
   }
   .sites-list-item:focus{
-  box-shadow: 4px 4px 5px 0 rgb(230, 130, 255);
+  box-shadow: 4px 4px 5px 0 #e682ff;
   border: none;  
   }
   .sites-list-item:active{
   border: none;  
-  background: rgb(255, 195, 82);
+  background: #ffc352;
   }
   .st-foot {
   position: absolute;
   color: transparent;  
-  background: black;
+  background: #000000;
   background-clip: text;
   -webkit-background-clip: text;  
   font-size:40px;
@@ -884,5 +894,5 @@ box-sizing: border-box;
   padding-right: 0;
   }
   .links-flex:hover {
-  color: rgb(243, 3, 3);
+  color: #f30303;
   }
